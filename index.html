@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+	<head>
+		<title>HL7 Visualizer</title>
+		<link rel="icon" type="image/png" href="img/KarmaButterFlyFavIcon.png"/>
+		<script src="js/main.js"></script>
+		<script src="js/eh7toxmlparser.js"></script>
+		<script src="js/eh7tojsonparser.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="text" type="text" href="testmessages/hl7v2adt.hl7"/>
+		<link type="Plain text" href="testmessages/hl7v2adt.hl7"/>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	</head>
+	<body onload="start()">
+		<div id="htmlViewEditor" class= "viewEditor">
+			<div id="htmlViewTitle" class="viewEditorTitle">
+				HL7 V2 in styled html
+			</div>
+			<div id="htmlViewEditorContent" class="viewEditorContent">
+				<textarea id="htmlViewEditorContentTextArea" class="viewEditorContentArea" rows="10" cols="130"> </textarea>
+			</div>
+		</div>
+		<div id="xmlViewEditor" class= "viewEditor">
+			<div id="xmlViewTitle" class="viewEditorTitle">
+				HL7 V2 XML
+			</div>
+			<div id="xmlViewEditorContent" class="viewEditorContent">
+				<textarea id="xmlViewEditorContentTextArea" class="viewEditorContentArea" rows="10" cols="130"> </textarea>
+			</div>
+		</div>
+		<div id="er7ViewEditor" class= "viewEditor">
+			<div id="er7ViewTitle" class="viewEditorTitle">
+				HL7 V2 - Standard structure
+			</div>
+			<div id="er7ViewEditorContent" class="viewEditorContent">
+				<textarea id="er7ViewEditorContentTextArea" class="viewEditorContentArea" rows="10" cols="130"> </textarea>
+			</div>
+		</div>
+	</body>
+</html>
